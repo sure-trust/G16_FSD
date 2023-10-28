@@ -1,31 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import axios from 'axios';
+let words = document.querySelectorAll(".word");
+words.forEach((word)=>{
+    let letters = word.textContent.split("");
+    word.textContent="";
+    letters.forEach((letter)=>{
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+    });
+});
 
-function App() {
-  const [projects, setProjects] = useState([]);
+let currentWordIndex = 0;
+let maxWordIndex = words.length -1;
+words[currentWordIndex].computedStyleMap.opacity = "1";
 
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/projects')
-      .then(response => setProjects(response.data))
-      .catch(error => console.error('Error:', error));
-  }, []);
+let changeText = ()=>{
+    let currentWord = words[currentWordIndex];
+    let nextWord = curentWordIndex === maxWordIndex ? words[0] : words[currentwordIndex + 1];
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My Portfolio</h1>
-        <ul>
-          {projects.map(project => (
-            <li key={project._id}>
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-            </li>
-          ))}
-        </ul>
-      </header>
-    </div>
-  );
-}
+    Array.from(currentWord.children).forEach((letter,i)=>{
+        setTimeout(()=>{
+            letter.className = "letter out";
+        },i * 80);
+    });
+    nextWord.style.opacity="1";
+    Array.from(nextWord.children).forEach((letter,i)=>{
+        letter.className = "letter behind";
+        setTimeout(()=>{
+            letter.className = "letter in";
+        },340 + i * 80);
+    });
+    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1; 
+};
 
-export default App;
+changeText();
+setInterval(changeText,3000);
