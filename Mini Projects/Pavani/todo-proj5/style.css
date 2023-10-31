@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {                                       
+    background-color: mediumslateblue;
+    color: white;                          /*body styling*/
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 3rem; /*heading size*/
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;                  /*the heading and the form has to be centered and in a block*/
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    padding-left: 1rem;            /*padding inside the button/input*/
+    padding-right: 0.8rem;
+    padding-top: 0.6rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;          /* the curvy edges fo the form input/button */
+}
+
+form button {
+    color: rgb(255, 200, 0);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 1.2rem;
+}
+
+form button:hover {
+    color: white;
+    background: rgb(255, 200, 0);
+}
+
+.fa-plus-circle {
+    padding-left: 0.8rem;
+    margin-top: 0.3rem;          /*adding the add icon symbol*/
+    margin-left: -8px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;      /*the to do container box*/
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;               /*the todo list*/
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;                /*todo input data box applies to all*/
+    display: flex;
+    justify-content:space-between;    /*content evenly divided with space*/
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.todo li {
+    flex: 1;            
+}
+
+.trash-btn, .complete-btn {
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.complete-btn {
+    background: rgb(255, 200, 0);
+}
+
+.trash-btn {
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    background: rgb(171, 171, 171);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;   /*cross a line on the text ang opacity 0.5 lighten the todo into half*/
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);   /*during delete moves towards X-axis right*/
+    opacity: 0;
+}
+
+
+/*styling the select option */
+
+select {
+    -webkit-appearance: none;    /*rendering engine used for display css styling webkit-chrome,safari moz-firfox*/
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;  /*make changes bysetting left right top..*/
+    overflow: hidden;    /*the select bar movement hidden*/
+    border-radius: 50px;
+}
+
+select {
+    color:rgb(255, 200, 0);
+    width: 10rem;
+    height: 3.1 rem;     /*the select arrow styling*/
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(255, 200, 0);
+    top: 0;
+    right: 0;
+    padding: 1rem;             /*1.1*/
+    pointer-events: none;       /*no effect while u click on the link*/
+    transition: all 0.3s ease;
+}
+
+.select::hover::after {
+    background: white;
+    color: rgb(255, 200, 0);
+}
+
+
+/*the color changing Background starts - GRADIENT BACKGROUND WITH WAVES */
+
+body {
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgb(39, 131, 125) 68%, rgb(212, 162, 24) 98%);/*generate gradient backgrounds using - (css Gradient tool)*/
+    animation: gradient 15s ease infinite; /*ease- A transition effect with a slow start, then fast, then end slowly */
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
