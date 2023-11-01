@@ -1,0 +1,2 @@
+View Link of the basic react application --
+https://cozy-gecko-a5e756.netlify.app
