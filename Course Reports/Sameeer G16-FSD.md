@@ -24,4 +24,4 @@ Below is a table summarizing the mini projects and final project completed durin
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
 | Mini Projects: Google forms,Static Website,Todo list,Calculator,Quiz game    | [click here](https://github.com/SHAIKSAMEER00/G16_FSD/tree/main/Mini%20Projects/S.Sameer)                       |
-| Final Project: Portfolio Website    | [Project Link]                         | [click here](https://github.com/SHAIKSAMEER00/G16_FSD/tree/main/Final%20Capstone%20Project/S.Sameer/Main%20Project)
+| Final Project: Portfolio Website    | [click here](https://github.com/SHAIKSAMEER00/G16_FSD/tree/main/Final%20Capstone%20Project/S.Sameer/Main%20Project)                         | 
