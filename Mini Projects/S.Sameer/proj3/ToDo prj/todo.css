@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vh;
+    background-color:rgb(245, 220, 233)
+}
+.app {
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px; 
+} 
+.container {
+    padding: 50px;
+    background-color: #f1f8fb;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    border-radius: 0.8rem;
+}
+.wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1rem;
+}
+.wrapper input {
+    width: 100%;
+    background-color: transparent;
+    border: none ;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 10px;
+}
+.wrapper input:focus {
+    outline: none;
+    border-color: #5a95ff;
+}
+.wrapper button {
+    position: relative;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #5a95ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+#tasks {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1rem;
+}
+#pendingTasks{
+    margin-top: 10px;
+} 
+#tasks p {
+    padding-top: 20px;      
+}
+
+.settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px; 
+    gap: 1rem;
+}
+.Editbtn {
+    padding: 5px;
+    border-radius: 8px;
+    width: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: aquamarine;
+
+}
+.Editbtn:hover {
+    color: aquamarine;
+    background-color: #003049;
+}
+.Deletebtn {
+    padding: 5px;
+    border-radius: 8px;
+    width: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    color: #ffffff;
+
+}
+
+.Deletebtn:hover {
+    color: red;
+    background-color: #003049;
+}
+#error{
+    text-align: center;
+    background-color: #ffffff;
+    color: #ff5c5c;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    display: none;
+}
