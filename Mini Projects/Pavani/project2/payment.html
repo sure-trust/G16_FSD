@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositing form</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color:royalblue;
+    }
+    h2{
+        color:darkcyan ;
+    }
+</style>
+<body>
+    <h1>Payment Form</h1>
+   <form action="">
+    <p>
+        <h2>Sender Details</h2>
+        <p>
+            <label for="">Account No:</label>
+            <input type="digits" name="" placeholder="IDIB0k2300">
+        </p>
+
+        <p>
+            <label for="">First Name:</label>
+            <input type="text" name="firstname" placeholder="Your First name..">
+    </p>  
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+     
+        <fieldset>
+            <legend>GENDER</legend>
+            <p><input type="radio" name="title">
+                <label for="">MALE:</label>
+            </p>
+            <p><input type="radio" name="title">
+                <label for="">FEMALE:</label>
+            </p>
+            <p><input type="radio" name="title">
+                <label for="">OTHER:</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="">Email id:</label>
+            <input type="email" name="">
+        </p>
+        <p>
+            <label for="">Branch name:</label>
+            <input type="text" name="" placeholder="enter bank branch name">
+        </p>
+        <p>
+            <label for="">IFSC code.:</label>
+            <input type="string" name="">
+        </p>
+        <p>
+            <label for="">Amount:</label>
+            <input type="text" name="" placeholder="enter the Transfer Amount">
+        </p>
+        <p>
+            <label for="paymentoption">Payment option:</label>
+            <select name="paymentopn" id="paymentoption">
+                <option value="Card Payment">Card Payment</option>
+                <option value="UPI">UPI</option>
+                <option value="DD">DD</option>
+            </select>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Receiver Details</h2>
+        <fieldset>
+            <legend>Title</legend>
+            <p><input type="radio" name="title">
+                <label for="">Mr:</label>
+            </p>
+            <p><input type="radio" name="title">
+                <label for="">Mrs:</label>
+            </p>
+            <p><input type="radio" name="title">
+                <label for="">Other:</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="">Name:</label>
+            <input type="text" name="">
+        </p>
+        <p>
+            <label for="">Name:</label>
+            <input type="text" name="">
+        </p>
+
+        <p>
+            <label for="">Reciever Account No:</label>
+            <input type="text" name="" placeholder="BKID01J267">
+        </p>
+
+        <p>
+            <label for="">Branch name & Address:</label>
+            <input type="text" name="" placeholder="Reciever Bank branch name, Address">
+        </p>
+    
+        <p>
+            <label for="">Reciever's Bank Swift Address:</label>
+            <input type="text" name="" placeholder="enter address">
+        </p>
+        <p>
+            <label for="">Country of Reciever's bank:</label>
+            <input type="text" name="" placeholder="enter country name">
+        </p>
+        <p>
+            <label for="">Amount:</label>
+            <input type="text" name="" placeholder="amount recieved">
+        </p>
+    </section>
+
+    <input type="submit" value="submit">
+   </form>
+
+
+
+</body>
+</html>

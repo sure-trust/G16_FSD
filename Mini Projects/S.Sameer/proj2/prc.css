@@ -1,0 +1,59 @@
+body{
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+.fixed{
+    position: fixed;
+    border-radius: 3px;
+    max-width: max-content;
+    right: 0px;
+    bottom: 0px;
+    padding: 2px;
+}
+
+.pop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkviolet;
+}
+.suretrustimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+      
+      
+
+}
+h1{
+    color: red;
+    text-align: center;
+
+}
+.text{
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    height: auto;
+    width: 100%;
+}
+.submit{
+    text-align: center;
+    color: green;
+}
+.future{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: darkred;
+    font-size: larger;
+}

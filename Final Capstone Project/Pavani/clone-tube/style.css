@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.a{
+    text-decoration: none;         /*   */
+    color:#5a5a5a          /*anchor tag*/
+}
+
+img{
+    cursor: pointer;  /*small hover effect when cursor is placed on it*/
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+/*----------------------------styling the nav bar---------------------------------------*/
+nav{
+    padding: 10px 2%; /*2% from the left and right sides*/
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0, 0,0.2);
+    background:white;
+    position: sticky;                                   /*nav bar down shadow*/
+    top: 0;
+    z-index:10;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+    margin-right: 25px;
+}
+.nav-right .user-icon{   /*created a class name for the user img called user-icon & increased the size*/
+    width: 35px;
+    border-radius: 50%;     /*circle*/
+    margin-right: 0;
+}
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px ;
+}
+.nav-left .logo{
+    width: 130px;
+}
+.nav-middle .mic-icon{
+  width: 15px;
+}
+.nav-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;            /*the outline surrounded with some padding around the search bar */
+    padding: 8px 12px;
+    border-radius: 25px;    
+}
+.nav-middle .search-box input{
+    width: 400px;
+    border: 0;                          /*styling the search bar*/
+    outline: 0;
+    background: transparent;
+}
+/*-----------------------------------end of styling top nav bar ---------------------------------------*/
+.sidebar {
+  background: #fff;
+  width: 15%;
+  height: 100vh;
+  top:0;
+  position: fixed;
+  padding-left: 2%;
+  padding-top: 80px;
+}
+
+.shortcut-links a img{
+   width: 20px;
+   margin-right: 20px;
+}
+
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.shortcut-links a:first-child{
+color: crimson;
+}
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width:85%;
+}
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+.subscribed-list a{
+    display: flex ;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.subscribed-list a img{
+    width:20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* Styling the Sidebar being responsive*/
+.small-sidebar{
+width: 5%;
+}
+.small-sidebar a p{
+display: none;
+}
+.small-sidebar  h3{
+display: none;
+}
+.small-sidebar  hr{
+width: 50%;
+margin-bottom: 25px;
+}
+/*----------------------------------------------main-------------------------------------------*/
+.container{
+ background: white;
+ padding-left: 17%;
+ padding-top: 20px;
+ padding-bottom:20px;
+}
+.large-container{             /*styling the empty space when menu btn is clicked */
+    padding-left: 7%;
+}
+
+.banner{
+ width: 100%;
+}
+.banner img{
+width: 100%;
+}
+  /*styling the thumbnail video content in grid*/
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+.video-list .thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.video-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.video-list .flex-div img{       /*styling the image of the channel owner into a circle*/
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.video-info{                        /*styling the content below the video thumbnail*/
+    color:#5a5a5a;
+    font-size: 13px;
+}
+.video-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;             /* end*/
+}
+/*to make responsive the website to fit in smaller screens, this responsiveness applicable for the devices containing max width 900px*/
+@media (max-width: 900px){
+    .menu-icon{
+        display: none;           
+    }                            /*removed sidebar and menu for smaller screens*/
+    .sidebar{
+        display: none;
+    }
+    .container, .large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-middle .search-box input{      /*fill in the video width in small scrn*/
+        width: 100px;
+    }
+}
+
+/*---------------------------- styling to play video ---------------------------------*/
+.play-container{
+    padding-left: 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.play video{
+    flex-basis: 69%;
+}
+.right-sidebar{
+    flex-basis: 30%;
+}
+.play-video video{
+    width: 100%;
+}
+/*styling below the video*/
+.play-video .tags a{
+    color:#000;
+    font-size: 13px;
+}
+.play-video .h3{
+   font-weight: 600;
+   font-size: 22px;
+}
+.play-video .play-video-info{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   font-size: 14px;
+   color: #5a5a5a;
+}
+.play-video .play-video-info a img{
+    width: 20px;
+    margin-right: 8px;
+}
+.play-video .play-video-info a{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.play-video hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+

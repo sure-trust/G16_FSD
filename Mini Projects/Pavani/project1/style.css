@@ -1,0 +1,178 @@
+.bg{
+  width: 100%;
+  height: 250vh;
+  background-image: linear-gradient(rgba(91, 164, 236, 0.75),rgba(70, 204, 153, 0.75)),url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: sans-serif;
+    box-sizing:  border-box;
+}
+
+.navbar{
+   width: 85%;
+   margin: auto;
+   padding: 35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+ 
+ h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  
+
+ h2 {
+  color: green;
+  font-size: 20px;
+  font-style: oblique;
+  text-align-last:left;
+  margin-left: 200px ;
+  }
+
+ h3{
+  font: size 80px;;
+  text-align: left;
+  color: rgb(22, 61, 97);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+ }
+
+/* navabar begins*/
+
+.navbar ul li{
+list-style: none;
+display:inline-block;
+margin: 0 20px;
+position:relative;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{ /*the line under the nav */
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; /*the transition remains for 0.5 sec*/
+}
+
+.navbar ul li:hover::after{
+  width: 100%; /* blue line will start from 0 tto 100*/
+}
+/*nav bar ends*/
+
+.content{
+  width: 100%;
+  position: absolute;
+  padding-left:  100px;
+  padding-right: 100px;
+}
+
+div.d{
+  text-align: justify;
+  font-size: larger;
+  color:rgba(43, 112, 168, 0.767) ;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+ul{
+  list-style: none;
+}
+
+.Abt{
+  padding-left: 50px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 2.5rem;
+  background-color: #20a7a0;
+  padding: 70px 0;
+  position: absolute;
+  bottom: -1100px;;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.footer-col{
+width: 50%;
+padding: 50 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.footer-col h5{
+  font-size: larger;
+  color: cadetblue;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+section{
+  padding: 80px 13% 70px;
+}
+
+.footer-content li{
+margin-bottom: 16px;
+}
+
+.footer-content li a{
+  display: block;
+  color: #09463e;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+
+.footer-col li a:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color: darkblue;
+} */
+
+
