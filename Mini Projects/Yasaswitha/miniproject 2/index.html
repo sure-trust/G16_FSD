@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dayPlanner.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <p>Monitor your Daily Tasks</p>
+        </div>
+        <nav>
+            <img src="assests/logo.jpg" class=" logo" >
+        </nav>
+        <div class="container">
+            <div class="wrapper">
+                <input type="text" id="task" placeholder="Enter your Agenda here">
+                <button id="btn-add">Add</button>
+            </div>
+        <div id="tasks">    </div>   
+        </div>
+        <div>
+            <p id="error"> You must enter something.</p>
+        </div> 
+    </div>
+
+    <div class="row">
+        <p>
+            Daily Tasks like the following 
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">Morning </div>
+            <div class="card-main">
+                <i class="material-icons">
+                    alarm
+                </i>
+                <div class="main-description"> Alarm</div>
+            </div>
+
+        </div>
+
+
+        <div class="card" id="or-border">
+            <div class="card-header" id="or-border">Breakfast </div>
+            <div class="card-main">
+                <i class="material-icons">
+                    local_cafe
+                </i>
+                <div class="main-description"> Tea</div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">Office </div>
+            <div class="card-main">
+                <i class="material-icons">
+                    directions_bike
+                </i>
+                <div class="main-description"> Cycling</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">Lunch </div>
+            <div class="card-main">
+                <i class="material-icons">
+                    lunch_dining
+                </i>
+                <div class="main-description"> Burger</div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-header">Evening </div>
+            <div class="card-main">
+                <i class="material-icons">
+                    local_cafe
+                </i>
+                <div class="main-description"> Coffee</div>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">Return Home</div>
+            <div class="card-main">
+                <i class="material-icons">
+                    directions_bus
+                </i>
+                <div class="main-description"> Bus</div>
+            </div>
+
+        </div>
+
+</div>
+
+
+
+        <div class="row">
+
+            <div class="card">
+                <div class="card-header">Night </div>
+                <div class="card-main">
+                    <i class="material-icons">
+                        hotel
+                    </i>
+                    <div class="main-description"> Sleep</div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">Food </div>
+                <div class="card-main">
+                    <i class="material-icons">
+                        lunch_dining
+                    </i>
+                    <div class="main-description"> Dinner</div>
+                </div>
+    
+            </div>
+        </div>
+
+        <script src="./dayPlanner.js"></script>
+</body>
+
+</html>
