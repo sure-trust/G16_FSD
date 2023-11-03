@@ -23,9 +23,9 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                                    | Link                                    |
 |------------------------------------------------|-----------------------------------------|
-| Mini Project1: [Netflix Clone]                 | [Click here!](https://github.com/Yashu-Hk/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject1)               |
+| Mini Project1: [Netflix Clone]                 | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject1)               |
 | Mini Project2: [Day Planner-Agenda Scheduler]  | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject%202)                         |
-| Mini Project3: [Assignments on HTML Basics]    | [Click here!](https://github.com/Yashu-Hk/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject3)                         |
-| Mini Project4: [CRUD App-Nostalgia]            | [Click here!](https://github.com/Yashu-Hk/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject4)                         |
-| Mini Project5: [A basic react project]         | [Click here!](https://github.com/Yashu-Hk/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject5)                         |
+| Mini Project3: [Assignments on HTML Basics]    | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject3)                         |
+| Mini Project4: [CRUD App-Nostalgia]            | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject4/CRUD%20App-Nostalgia)                         |
+| Mini Project5: [A basic react project]         | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Mini%20Projects/Yasaswitha/miniproject5/react-app)                         |
 | Final Project: [Bookstore]                     | [Click here!](https://github.com/sure-trust/G16_FSD/tree/main/Final%20Capstone%20Project/Yasaswitha)                         |
