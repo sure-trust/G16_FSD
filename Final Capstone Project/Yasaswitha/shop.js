@@ -37,7 +37,26 @@ window.onscroll=()=>{
     ShoppingCart.classList.remove('active');
     Login.classList.remove('active');
 }
+function validateLogin() {
+  // Simple validation, you can add more sophisticated validation logic here
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
 
+  if (username === 'user' && password === 'pass') {
+      alert('Login successful!');
+      // Redirect to home page or any other page
+      window.location.href = 'index.html';
+  } else {
+      alert('Invalid username or password. Please try again.');
+  }
+}
+function subscribe() {
+  var emailInput = document.getElementsByName('email')[0].value;
+  
+  // You can add logic to handle the subscription, e.g., send the email to the server
+  console.log('Subscribed with email: ' + emailInput);
+  alert('Subscription successful!');
+}
 
 var swiper = new Swiper(".product-slider", {
   loop:true,
