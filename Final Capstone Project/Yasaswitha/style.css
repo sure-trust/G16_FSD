@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --pink: rgb(249, 99, 124);
-  --black: #130f40;
+  --pink: rgb(108, 94, 97);
+  --black: #281f82;
   --light-color: #666;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --border: 0.2rem solid rgba(0, 0, 0, 0.1);
@@ -64,6 +64,10 @@ html {
 }
 body {
   background: #eee;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 section{
     padding: 2rem 9%;
@@ -78,7 +82,7 @@ section{
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
-  background: #837f7f;
+  background: #6dc9ed;
   box-shadow: var(--box-shadow);
 }
 .header .logo {
@@ -290,6 +294,94 @@ section{
         padding: 2rem;
     }
 }
+
+footer {
+  background-color: #0c0c0c;
+  color: #fff;
+  
+}
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.footer-section h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.subscribe form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe input {
+  flex: 2;
+  padding: 8px;
+}
+
+.subscribe button {
+  flex: 1;
+  padding: 8px;
+  background-color: #16da1c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+}
+
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 @media(max-width:768px){
     
     #menu-btn{
@@ -332,7 +424,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./images/pic2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
