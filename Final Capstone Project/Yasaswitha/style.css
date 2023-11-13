@@ -346,6 +346,36 @@ footer {
   border-top: 1px solid #555;
 }
 
+.footer{
+  padding: 50px 15% ;
+  border-top: 6px solid ;
+  color: #777;
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight:400 ;
+  margin-bottom: 30px;
+}
+
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a{
+  display: block;
+  text-decoration: wavy;
+  color:#777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row{
+  align-items: flex-start;
+  padding: 10px 0;
+}
 
 h1 {
   color: #333;
@@ -384,33 +414,32 @@ footer {
 }
 @media(max-width:768px){
     
-    #menu-btn{
+#menu-btn{
         display: inline-block;
     }
-    .header .search-form{
+.header .search-form{
         width: 90%;
     }
-        .header .navbar{
+.header .navbar{
             position: absolute;
             top: 110%;right:-110% ;
             width: 30rem;
             box-shadow: var(--box-shadow);
             border-radius: .5rem;
             background: #fff;
-        }
-        .header .navbar.active{
+}
+.header .navbar.active{
             right: 2rem;
             transition: .4s linear;
-        }
-        .header .navbar a{
+}
+.header .navbar a{
             font-size: 2rem;
             margin: 2rem 2.5rem;
             display: block;
-
-        }
-        section{
+}
+#section{
             padding: 2rem;
-        }
+}
 }
 @media(max-width:450px){
     html {
@@ -472,44 +501,6 @@ footer {
   font-size: 2.5rem;
   line-height: 1.8rem;
   color: var(--light-color);
-}
-.books  .book-slider{
-  padding: 1rem;
-}
-.books  .book-slider:first-child{
-  margin-bottom: 2rem;
-
-}
-.books  .book-slider .box{
-  background: #fff;
-  border-radius: .5rem;
-  text-align: center;
-  padding: 3rem 2rem;
-  outline-offset: -1rem;
-  outline: var(--outline);
-  box-shadow: var(--box-shadow);
-  transition: .2s linear;
-}
-.books  .book-slider .box:hover{
-  outline-offset: 0rem;
-  outline: var(--outline-hover);
-}
-.books  .book-slider .box img{
-  height: 20rem;
-}
-.books  .book-slider .box h3{
-  font-size: 2.5rem;
-  color: var(--black);
-}
-.books  .book-slider .box .price{
-  font-size: 2rem;
-  color: var(--light-color);
-  padding: .5rem 0;
-}
-.books  .book-slider .box .stars i{
-  font-size: 1.7rem;
-  color: var(--orange);
-  padding:.5rem 0 ;
 }
 
 .categories .box-container{
